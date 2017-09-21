@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1505957525 source:/home/jakaria/Documents/File Demo/FileDemo/main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<fstream>
+	<sstream>
+
