@@ -77,16 +77,31 @@ int main()
 
     outObj.open("out.obj");
 
-    outObj << 'v' << " " << Indices[0] << " ";
+    outObj << "v" << " " << Indices[0] << " ";
 
     for(long int i=1; i<Indices.size(); i++)
     {
         if((i%3)==0)
         {
-            outObj << "\n" << 'v' << " ";
+            outObj << "\n" << "v" << " ";
         }
 
         outObj << Indices[i] << " ";
+
+    }
+
+    outObj << "\n";
+
+    for(long int j=0; j<Faces.size(); j++)
+    {
+        outObj << "f" << " ";
+
+        for(int k=0; k<Faces[j].size(); k++)
+        {
+            outObj << Faces[j][k] << " ";
+        }
+
+        outObj << "\n";
 
     }
 
